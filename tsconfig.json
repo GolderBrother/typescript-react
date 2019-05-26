@@ -1,0 +1,15 @@
+// tsconfig.json整理记录
+// https://blog.csdn.net/weixin_34006468/article/details/88063256
+{
+  "compilerOptions": {
+    "outDir": "./dist", // 生成目录
+    "sourceMap": false, // 是否生成.map映射文件
+    "noImplicitAny": true, // 是否不允许定义为any类型
+    "module": "commonjs", // 模块类型：commonjs
+    "target":"es5", // 编译为es5语法
+    "jsx": "react", // jsx的语法为react
+    "allowJs": true, // 允许编译javascript文件
+    "checkJs": true // 在 .js文件中报告错误。与 --allowJs配合使用
+  },
+  "include": ["./src/**/*"] //需要编译的目录，包括当前目录下的 src目录的所有目录的所有文件
+}

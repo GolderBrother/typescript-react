@@ -1,0 +1,16 @@
+# travis内部会启动一个docker容器来运行
+
+# 安装nodejs(版本 11)
+language: node_js
+node_js:
+  - "11"
+# 安装依赖包
+install:
+  - npm install
+# 自动测试命令
+script:
+  - npm test
+  # 指定master分支
+branches:
+  only:
+    - master    
